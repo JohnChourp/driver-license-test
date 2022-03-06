@@ -386,6 +386,191 @@ function testResults(){
 	});
 	//Ερώτηση 20
 	
+	//Ερώτηση 21
+	trueAnswer.item(20).addEventListener('click' , function(){
+		if(trueAnswer.item(20).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(20).classList.add("checkedTrue");
+		}
+	});
+	falseAnswer.item(32).addEventListener('click' , function(){
+		if(trueAnswer.item(20).classList.contains("checkedTrue")){
+			trueAnswer.item(20).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 21
+	
+	//Ερώτηση 22
+	trueAnswer.item(21).addEventListener('click' , function(){
+		if(trueAnswer.item(21).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(21).classList.add("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(33).addEventListener('click' , function(){
+		if(trueAnswer.item(21).classList.contains("checkedTrue")){
+			trueAnswer.item(21).classList.remove("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(34).addEventListener('click' , function(){
+		if(trueAnswer.item(21).classList.contains("checkedTrue")){
+			trueAnswer.item(21).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 22
+	
+	//Ερώτηση 23
+	trueAnswer.item(22).addEventListener('click' , function(){
+		if(trueAnswer.item(22).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(22).classList.add("checkedTrue");
+		}
+	});
+	falseAnswer.item(35).addEventListener('click' , function(){
+		if(trueAnswer.item(22).classList.contains("checkedTrue")){
+			trueAnswer.item(22).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 23
+	
+	//Ερώτηση 24
+	trueAnswer.item(23).addEventListener('click' , function(){
+		if(trueAnswer.item(23).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(23).classList.add("checkedTrue");
+		}
+	});
+	falseAnswer.item(36).addEventListener('click' , function(){
+		if(trueAnswer.item(23).classList.contains("checkedTrue")){
+			trueAnswer.item(23).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 24
+	
+	//Ερώτηση 25
+	trueAnswer.item(24).addEventListener('click' , function(){
+		if(trueAnswer.item(24).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(24).classList.add("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(37).addEventListener('click' , function(){
+		if(trueAnswer.item(24).classList.contains("checkedTrue")){
+			trueAnswer.item(24).classList.remove("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(38).addEventListener('click' , function(){
+		if(trueAnswer.item(24).classList.contains("checkedTrue")){
+			trueAnswer.item(24).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 25
+	
+	//Ερώτηση 26
+	trueAnswer.item(25).addEventListener('click' , function(){
+		if(trueAnswer.item(25).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(25).classList.add("checkedTrue");
+		}
+	});
+	falseAnswer.item(39).addEventListener('click' , function(){
+		if(trueAnswer.item(25).classList.contains("checkedTrue")){
+			trueAnswer.item(25).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 26
+	
+	//Ερώτηση 27
+	trueAnswer.item(26).addEventListener('click' , function(){
+		if(trueAnswer.item(26).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(26).classList.add("checkedTrue");
+		}
+	});
+	falseAnswer.item(40).addEventListener('click' , function(){
+		if(trueAnswer.item(26).classList.contains("checkedTrue")){
+			trueAnswer.item(26).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 27
+	
+	//Ερώτηση 28
+	trueAnswer.item(27).addEventListener('click' , function(){
+		if(trueAnswer.item(27).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(27).classList.add("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(41).addEventListener('click' , function(){
+		if(trueAnswer.item(27).classList.contains("checkedTrue")){
+			trueAnswer.item(27).classList.remove("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(42).addEventListener('click' , function(){
+		if(trueAnswer.item(27).classList.contains("checkedTrue")){
+			trueAnswer.item(27).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 28
+	
+	//Ερώτηση 29
+	trueAnswer.item(28).addEventListener('click' , function(){
+		if(trueAnswer.item(28).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(28).classList.add("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(43).addEventListener('click' , function(){
+		if(trueAnswer.item(28).classList.contains("checkedTrue")){
+			trueAnswer.item(28).classList.remove("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(44).addEventListener('click' , function(){
+		if(trueAnswer.item(28).classList.contains("checkedTrue")){
+			trueAnswer.item(28).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 29
+	
+	//Ερώτηση 30
+	trueAnswer.item(29).addEventListener('click' , function(){
+		if(trueAnswer.item(29).classList.contains("checkedTrue")){
+		
+		}else{
+			trueAnswer.item(29).classList.add("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(45).addEventListener('click' , function(){
+		if(trueAnswer.item(29).classList.contains("checkedTrue")){
+			trueAnswer.item(29).classList.remove("checkedTrue");
+		}
+	});
+	
+	falseAnswer.item(46).addEventListener('click' , function(){
+		if(trueAnswer.item(29).classList.contains("checkedTrue")){
+			trueAnswer.item(29).classList.remove("checkedTrue");
+		}
+	});
+	//Ερώτηση 30
+	
 	let done = document.getElementById("done");
 	done.addEventListener('click' , function(){
 		let checkedTrue = document.getElementsByClassName("checkedTrue");
