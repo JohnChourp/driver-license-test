@@ -54,10 +54,10 @@
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
-	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
+	top: 7px;
+	left: 7px;
+	width: 11px;
+	height: 11px;
 	border-radius: 50%;
 	background: white;
 }
@@ -69,4 +69,119 @@
 .headings {
 	font: 22px "Oswald";
 	font-weight: bold;
+}
+
+.titleTest {
+	font: 40px "Oswald";
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1600px) {
+	.headings {
+		font: 18px "Oswald";
+		font-weight: bold;
+	}
+	
+	.titleTest {
+		font: 35px "Oswald";
+		font-weight: bold;
+	}
+	
+	.cardThumb {
+		width: 250px;
+	}
+	
+	.container {
+		padding-left: 25px;
+		margin-bottom: 12px;
+		font-size: 18px;
+	}
+	
+	.checkmark {
+		height: 20px;
+		width: 20px;
+	}
+	
+	.container .checkmark:after {
+		top: 6px;
+		left: 6px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: white;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.headings {
+		font: 16px "Oswald";
+		font-weight: bold;
+	}
+	
+	.titleTest {
+		font: 30px "Oswald";
+		font-weight: bold;
+	}
+	
+	.cardThumb {
+		width: 200px;
+	}
+	
+	.container {
+		padding-left: 20px;
+		margin-bottom: 12px;
+		font-size: 16px;
+	}
+	
+	.checkmark {
+		height: 15px;
+		width: 15px;
+	}
+	
+	.container .checkmark:after {
+		top: 5px;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: white;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.headings {
+		font: 14px "Oswald";
+		font-weight: bold;
+	}
+	
+	.titleTest {
+		font: 25px "Oswald";
+		font-weight: bold;
+	}
+	
+	.cardThumb {
+		width: 150px;
+	}
+	
+	.container {
+		padding-left: 18px;
+		margin-bottom: 12px;
+		font-size: 14px;
+	}
+	
+	.checkmark {
+		height: 10px;
+		width: 10px;
+		top: 3px;
+		left: 3px;
+	}
+	
+	.container .checkmark:after {
+		top: 3px;
+		left: 3px;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: white;
+	}
 }
