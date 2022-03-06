@@ -62,7 +62,6 @@ function testResults(){
 		}
 	});
 	//Ερώτηση 3
-	
 	let done = document.getElementById("done");
 	done.addEventListener('click' , function(){
 		let checkedLength = document.getElementsByClassName("checked").length;
