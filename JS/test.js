@@ -70,13 +70,18 @@ function testResults(){
 		
 		for(let i = 0; i < trueAnswerLength; i ++){
 			trueAnswer.item(i).style.backgroundColor = "#7BFD76";
+			trueAnswer.item(i).style.color = "black";
 		}
 		for(let i = 0; i < falseAnswerLength; i ++){
 			falseAnswer.item(i).style.backgroundColor = "#FD7676";
+			falseAnswer.item(i).style.color = "black";
 		}
 		for(let i = 0; i < checkedLength; i ++){
 			checkedTrue.item(i).style.backgroundColor = "#7691fd";
+			checkedTrue.item(i).style.color = "black";
 		}
-		alert("Έκανες " + checkedLength + " από τις " + trueAnswerLength + " ερωτήσεις σωστές");
+
+		let results = document.getElementById("results");
+		results.innerHTML = "Έκανες " + checkedLength + " από τις " + trueAnswerLength + " ερωτήσεις σωστές";
 	});
 }
