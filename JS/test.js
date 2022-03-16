@@ -1,12 +1,7 @@
-function setSum(){
-	localStorage.setItem("sum","0");
-}
-
 function testQuestion1(){
 	let inputTrue = document.getElementsByClassName("true");
 	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	let sum = parseInt(localStorage.getItem("sum"));
 	
 	inputTrue.item(0).addEventListener('click' , function(){
 		if(inputTrue.item(0).classList.contains("checkedTrue")){
@@ -33,8 +28,6 @@ function testQuestion1(){
 	
 	btnNextQuestion.addEventListener('click' , function(){
 		if(inputTrue.item(0).checked){
-			sum = sum + 1;
-			localStorage.setItem("sum",sum);
 			localStorage.setItem("question1","true");
 		}
 		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
@@ -50,7 +43,6 @@ function testQuestion2(){
 	let inputTrue = document.getElementsByClassName("true");
 	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	let sum = parseInt(localStorage.getItem("sum"));
 	
 	inputTrue.item(0).addEventListener('click' , function(){
 		if(inputTrue.item(0).classList.contains("checkedTrue")){
@@ -90,8 +82,6 @@ function testQuestion2(){
 	
 	btnNextQuestion.addEventListener('click' , function(){
 		if(inputTrue.item(0).checked){
-			sum = sum + 1;
-			localStorage.setItem("sum",sum);
 			localStorage.setItem("question2","true");
 		}
 		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
@@ -107,7 +97,6 @@ function testQuestion3(){
 	let inputTrue = document.getElementsByClassName("true");
 	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	let sum = parseInt(localStorage.getItem("sum"));
 	
 	inputTrue.item(0).addEventListener('click' , function(){
 		if(inputTrue.item(0).classList.contains("checkedTrue")){
@@ -146,8 +135,6 @@ function testQuestion3(){
 	
 	btnNextQuestion.addEventListener('click' , function(){
 		if(inputTrue.item(0).checked){
-			sum = sum + 1;
-			localStorage.setItem("sum",sum);
 			localStorage.setItem("question3","true");
 		}
 		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
