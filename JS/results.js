@@ -49,5 +49,31 @@ function results(){
 	}
 	//Question3
 	
+	//Question4
+	if(localStorage.getItem("question4-0") === "checked"){
+		checkmark.item(8).style.backgroundColor = "#7691FD";
+		sum = sum + 1;
+	}
+	if(localStorage.getItem("question4-1") === "checked"){
+		checkmark.item(9).style.backgroundColor = "#7691FD";
+	}
+	if(localStorage.getItem("question4-2") === "checked"){
+		checkmark.item(10).style.backgroundColor = "#7691FD";
+	}
+	//Question4
+	
+	//Question5
+	if(localStorage.getItem("question5-0") === "checked"){
+		checkmark.item(11).style.backgroundColor = "#7691FD";
+		sum = sum + 1;
+	}
+	if(localStorage.getItem("question5-1") === "checked"){
+		checkmark.item(12).style.backgroundColor = "#7691FD";
+	}
+	if(localStorage.getItem("question5-2") === "checked"){
+		checkmark.item(13).style.backgroundColor = "#7691FD";
+	}
+	//Question5
+	
 	results.innerHTML = "Σωστές απαντήσεις: " + sum + " από τις 30";
 }

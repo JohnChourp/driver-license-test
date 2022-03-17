@@ -42,3 +42,33 @@ function testQuestion3(){
 		}
 	});
 }
+
+function testQuestion4(){
+	let btnNextQuestion = document.getElementById("nextQuestion");
+	let input = document.getElementsByTagName("input");
+	
+	btnNextQuestion.addEventListener('click' , function(){
+		for(let i = 0; i < input.length; i ++){
+			if(input.item(i).checked){
+				localStorage.setItem("question4-" + i , "checked");
+			}else{
+				localStorage.removeItem("question4-" + i);
+			}
+		}
+	});
+}
+
+function testQuestion5(){
+	let btnNextQuestion = document.getElementById("nextQuestion");
+	let input = document.getElementsByTagName("input");
+	
+	btnNextQuestion.addEventListener('click' , function(){
+		for(let i = 0; i < input.length; i ++){
+			if(input.item(i).checked){
+				localStorage.setItem("question5-" + i , "checked");
+			}else{
+				localStorage.removeItem("question5-" + i);
+			}
+		}
+	});
+}
