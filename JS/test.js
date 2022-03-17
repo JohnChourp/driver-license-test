@@ -1,147 +1,63 @@
 function testQuestion1(){
-	let inputTrue = document.getElementsByClassName("true");
-	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	
-	inputTrue.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputTrue.item(0).classList.add("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-			inputFalse.item(0).classList.remove("checkedTrue");
-		}
-	});
-	inputFalse.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-			inputTrue.item(0).classList.remove("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputFalse.item(0).classList.add("checkedTrue");
-		}
-	});
+	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(inputTrue.item(0).checked){
-			localStorage.setItem("question1","true");
-		}
-		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
-		if(checkedTrue.classList.contains("true")){
-			localStorage.setItem("question1Checked","true");
+		if(input.item(0).checked){
+			localStorage.setItem("question1-0" , "false");
 		}else{
-			localStorage.setItem("question1Checked","false");
+			localStorage.setItem("question1-0" , "true");
+		}
+		if(input.item(1).checked){
+			localStorage.setItem("question1-1" , "true");
+		}else{
+			localStorage.setItem("question1-1" , "false");
 		}
 	});
 }
 
 function testQuestion2(){
-	let inputTrue = document.getElementsByClassName("true");
-	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	
-	inputTrue.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputTrue.item(0).classList.add("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-			inputFalse.item(0).classList.remove("checkedTrue");
-		}
-	});
-	
-	inputFalse.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-			inputTrue.item(0).classList.remove("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputFalse.item(0).classList.add("checkedTrue");
-		}
-	});
-	
-	inputFalse.item(1).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-			inputTrue.item(0).classList.remove("checkedTrue");
-		}
-		
-		if(inputFalse.item(1).classList.contains("checkedTrue")){
-		
-		}else{
-			inputFalse.item(1).classList.add("checkedTrue");
-		}
-	});
+	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(inputTrue.item(0).checked){
-			localStorage.setItem("question2","true");
-		}
-		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
-		if(checkedTrue.classList.contains("true")){
-			localStorage.setItem("question2Checked","true");
+		if(input.item(0).checked){
+			localStorage.setItem("question2-0" , "true");
 		}else{
-			localStorage.setItem("question2Checked","false");
+			localStorage.setItem("question2-0" , "false");
+		}
+		if(input.item(1).checked){
+			localStorage.setItem("question2-1" , "false");
+		}else{
+			localStorage.setItem("question2-1" , "true");
+		}
+		if(input.item(2).checked){
+			localStorage.setItem("question2-2" , "false");
+		}else{
+			localStorage.setItem("question2-2" , "true");
 		}
 	});
 }
 
 function testQuestion3(){
-	let inputTrue = document.getElementsByClassName("true");
-	let inputFalse = document.getElementsByClassName("false");
 	let btnNextQuestion = document.getElementById("nextQuestion");
-	
-	inputTrue.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputTrue.item(0).classList.add("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-			inputFalse.item(0).classList.remove("checkedTrue");
-		}
-	});
-	inputFalse.item(0).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-			inputTrue.item(0).classList.remove("checkedTrue");
-		}
-		
-		if(inputFalse.item(0).classList.contains("checkedTrue")){
-		
-		}else{
-			inputFalse.item(0).classList.add("checkedTrue");
-		}
-	});
-	
-	inputFalse.item(1).addEventListener('click' , function(){
-		if(inputTrue.item(0).classList.contains("checkedTrue")){
-			inputTrue.item(0).classList.remove("checkedTrue");
-		}
-		
-		if(inputFalse.item(1).classList.contains("checkedTrue")){
-		
-		}else{
-			inputFalse.item(1).classList.add("checkedTrue");
-		}
-	});
+	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(inputTrue.item(0).checked){
-			localStorage.setItem("question3","true");
-		}
-		let checkedTrue = document.getElementsByClassName("checkedTrue").item(0);
-		if(checkedTrue.classList.contains("true")){
-			localStorage.setItem("question3Checked","true");
+		if(input.item(0).checked){
+			localStorage.setItem("question3-0" , "false");
 		}else{
-			localStorage.setItem("question3Checked","false");
+			localStorage.setItem("question3-0" , "true");
+		}
+		if(input.item(1).checked){
+			localStorage.setItem("question3-1" , "true");
+		}else{
+			localStorage.setItem("question3-1" , "false");
+		}
+		if(input.item(2).checked){
+			localStorage.setItem("question3-2" , "false");
+		}else{
+			localStorage.setItem("question3-2" , "true");
 		}
 	});
 }

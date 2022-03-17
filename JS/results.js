@@ -13,18 +13,41 @@ function results(){
 		inputFalse.item(i).style.backgroundColor = "#C40E25";
 	}
 	
-	if(localStorage.getItem("question1Checked") === "true"){
+	//Question1
+	if(localStorage.getItem("question1-0") === "false"){
+		checkmark.item(0).style.backgroundColor = "#7691FD";
+	}
+	if(localStorage.getItem("question1-1") === "true"){
 		checkmark.item(1).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
-	if(localStorage.getItem("question2Checked") === "true"){
+	//Question1
+	
+	//Question2
+	if(localStorage.getItem("question2-0") === "true"){
 		checkmark.item(2).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
-	if(localStorage.getItem("question3Checked") === "true"){
+	if(localStorage.getItem("question2-1") === "false"){
+		checkmark.item(3).style.backgroundColor = "#7691FD";
+	}
+	if(localStorage.getItem("question2-2") === "false"){
+		checkmark.item(4).style.backgroundColor = "#7691FD";
+	}
+	//Question2
+	
+	//Question3
+	if(localStorage.getItem("question3-0") === "false"){
+		checkmark.item(5).style.backgroundColor = "#7691FD";
+	}
+	if(localStorage.getItem("question3-1") === "true"){
 		checkmark.item(6).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
+	if(localStorage.getItem("question3-2") === "false"){
+		checkmark.item(7).style.backgroundColor = "#7691FD";
+	}
+	//Question3
 	
 	results.innerHTML = "Σωστές απαντήσεις: " + sum + " από τις 30";
 }
