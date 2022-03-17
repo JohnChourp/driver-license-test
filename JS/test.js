@@ -3,15 +3,12 @@ function testQuestion1(){
 	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(input.item(0).checked){
-			localStorage.setItem("question1-0" , "false");
-		}else{
-			localStorage.setItem("question1-0" , "true");
-		}
-		if(input.item(1).checked){
-			localStorage.setItem("question1-1" , "true");
-		}else{
-			localStorage.setItem("question1-1" , "false");
+		for(let i = 0; i < input.length; i ++){
+			if(input.item(i).checked){
+				localStorage.setItem("question1-" + i , "checked");
+			}else{
+				localStorage.removeItem("question1-" + i);
+			}
 		}
 	});
 }
@@ -21,20 +18,12 @@ function testQuestion2(){
 	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(input.item(0).checked){
-			localStorage.setItem("question2-0" , "true");
-		}else{
-			localStorage.setItem("question2-0" , "false");
-		}
-		if(input.item(1).checked){
-			localStorage.setItem("question2-1" , "false");
-		}else{
-			localStorage.setItem("question2-1" , "true");
-		}
-		if(input.item(2).checked){
-			localStorage.setItem("question2-2" , "false");
-		}else{
-			localStorage.setItem("question2-2" , "true");
+		for(let i = 0; i < input.length; i ++){
+			if(input.item(i).checked){
+				localStorage.setItem("question2-" + i , "checked");
+			}else{
+				localStorage.removeItem("question2-" + i);
+			}
 		}
 	});
 }
@@ -44,20 +33,12 @@ function testQuestion3(){
 	let input = document.getElementsByTagName("input");
 	
 	btnNextQuestion.addEventListener('click' , function(){
-		if(input.item(0).checked){
-			localStorage.setItem("question3-0" , "false");
-		}else{
-			localStorage.setItem("question3-0" , "true");
-		}
-		if(input.item(1).checked){
-			localStorage.setItem("question3-1" , "true");
-		}else{
-			localStorage.setItem("question3-1" , "false");
-		}
-		if(input.item(2).checked){
-			localStorage.setItem("question3-2" , "false");
-		}else{
-			localStorage.setItem("question3-2" , "true");
+		for(let i = 0; i < input.length; i ++){
+			if(input.item(i).checked){
+				localStorage.setItem("question3-" + i , "checked");
+			}else{
+				localStorage.removeItem("question3-" + i);
+			}
 		}
 	});
 }

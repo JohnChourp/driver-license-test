@@ -14,37 +14,37 @@ function results(){
 	}
 	
 	//Question1
-	if(localStorage.getItem("question1-0") === "false"){
+	if(localStorage.getItem("question1-0") === "checked"){
 		checkmark.item(0).style.backgroundColor = "#7691FD";
 	}
-	if(localStorage.getItem("question1-1") === "true"){
+	if(localStorage.getItem("question1-1") === "checked"){
 		checkmark.item(1).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
 	//Question1
 	
 	//Question2
-	if(localStorage.getItem("question2-0") === "true"){
+	if(localStorage.getItem("question2-0") === "checked"){
 		checkmark.item(2).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
-	if(localStorage.getItem("question2-1") === "false"){
+	if(localStorage.getItem("question2-1") === "checked"){
 		checkmark.item(3).style.backgroundColor = "#7691FD";
 	}
-	if(localStorage.getItem("question2-2") === "false"){
+	if(localStorage.getItem("question2-2") === "checked"){
 		checkmark.item(4).style.backgroundColor = "#7691FD";
 	}
 	//Question2
 	
 	//Question3
-	if(localStorage.getItem("question3-0") === "false"){
+	if(localStorage.getItem("question3-0") === "checked"){
 		checkmark.item(5).style.backgroundColor = "#7691FD";
 	}
-	if(localStorage.getItem("question3-1") === "true"){
+	if(localStorage.getItem("question3-1") === "checked"){
 		checkmark.item(6).style.backgroundColor = "#7691FD";
 		sum = sum + 1;
 	}
-	if(localStorage.getItem("question3-2") === "false"){
+	if(localStorage.getItem("question3-2") === "checked"){
 		checkmark.item(7).style.backgroundColor = "#7691FD";
 	}
 	//Question3
