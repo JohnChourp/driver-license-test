@@ -81,6 +81,36 @@ body {
 	font-weight: bold;
 }
 
+#nextQuestion {
+	background-color: #404040;
+}
+
+a:link {
+	color: #00A5A8;
+	font-weight: bold;
+	transition: all .2s linear;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #00A5A8;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 1600px) {
 	.headings {
 		font: 18px "Oswald";
