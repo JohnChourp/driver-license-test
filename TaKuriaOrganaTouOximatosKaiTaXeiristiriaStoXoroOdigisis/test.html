@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../CSS/body.css" type="text/css">
 	<link rel="stylesheet" href="../CSS/imgPhotoQuestion.css" type="text/css">
 	<link rel="stylesheet" href="../CSS/nextButtons.css" type="text/css">
+	<link rel="stylesheet" href="../CSS/radioCheckbox.css" type="text/css">
 	<script src="\TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis\test.js" type="text/javascript"></script>
 	<title>Test1</title>
 </head>
@@ -18,15 +19,17 @@
 		</p>
 		<div>
 			<div class="questionFalse">
-				<label>
-					<input type="radio" name="radio1" value="false">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio1" value="false">
+					<span class="checkmark"></span>
 					ΝΑΙ
 				</label>
 			</div>
 			<br>
 			<div class="questionTrue">
-				<label>
-					<input type="radio" name="radio1" value="true">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio1" value="true">
+					<span class="checkmark"></span>
 					ΟΧΙ
 				</label>
 			</div>
@@ -43,21 +46,23 @@
 
 		<div>
 			<div class="questionFalse">
-				<label>
-					<input type="radio" name="radio2" value="false">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio2" value="false">
+					<span class="checkmark"></span>
 					Εξασφαλίζουν μόνο άνεση των επιβατών.
 				</label>
 			</div>
 			<br>
 			<div class="questionTrue">
-				<label>
-					<input type="radio" name="radio2" value="true">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio2" value="true">
+					<span class="checkmark"></span>
 					Εγγυώνται κυρίως τη σωστή επαφή των τροχών με το οδόστρωμα.
 				</label>
 			</div>
 		</div>
 		<br><br>
-		<button class="button nextQuestionBtn" onclick="hideQuestion2(1);">Επόμενη Ερώτηση</button>
+		<button class="button nextQuestionBtn" onclick="hideQuestion2(1);"><span>Επόμενη Ερώτηση</span></button>
 	</div>
 
 	<div class="question" style="display: none;">
@@ -68,28 +73,31 @@
 
 		<div>
 			<div class="questionTrue">
-				<label>
-					<input type="radio" name="radio3" value="true">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio3" value="true">
+					<span class="checkmark"></span>
 					1 (αριστερά).
 				</label>
 			</div>
 			<br>
 			<div class="questionFalse">
-				<label>
-					<input type="radio" name="radio3" value="false">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio3" value="false">
+					<span class="checkmark"></span>
 					2 (στο μέσο).
 				</label>
 			</div>
 			<br>
 			<div class="questionFalse">
-				<label>
-					<input type="radio" name="radio3" value="false">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio3" value="false">
+					<span class="checkmark"></span>
 					3 (δεξιά).
 				</label>
 			</div>
 		</div>
 		<br><br>
-		<button class="button nextQuestionBtn" onclick="hideQuestion3(2); checkAnswerQuestion();">Αποτελέσματα</button>
+		<button class="button nextQuestionBtn" onclick="hideQuestion3(2); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
 	</div>
 
 	<div id="result"></div>

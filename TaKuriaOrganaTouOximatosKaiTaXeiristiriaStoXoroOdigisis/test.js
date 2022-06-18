@@ -58,6 +58,7 @@ function checkAnswerQuestion() {
 	let questionTrue = document.getElementsByClassName("questionTrue");
 	let questionFalse = document.getElementsByClassName("questionFalse");
 	let result = document.getElementById("result");
+	let radioCheckBox = document.getElementsByClassName("radioCheckBox");
 
 	for (let i = 0; i < question.length; i++) {
 		question.item(i).style.display = "block";
@@ -73,6 +74,10 @@ function checkAnswerQuestion() {
 
 	for (let i = 0; i < questionFalse.length; i++) {
 		questionFalse.item(i).style.backgroundColor = "red";
+	}
+
+	for (let i = 0; i < radioCheckBox.length; i++) {
+		radioCheckBox.item(i).disabled = "disabled";
 	}
 
 	result.innerHTML = "Απάντησες " + parseInt(localStorage.getItem("trueQNum")) + " από τις " + question.length + " Σωστές";
