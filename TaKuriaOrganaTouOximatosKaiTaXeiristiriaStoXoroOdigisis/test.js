@@ -54,11 +54,26 @@ function hideQuestion3(n) {
 
 function checkAnswerQuestion() {
 	let question = document.getElementsByClassName("question");
+	let nextQuestionBtn = document.getElementsByClassName("nextQuestionBtn");
+	let questionTrue = document.getElementsByClassName("questionTrue");
+	let questionFalse = document.getElementsByClassName("questionFalse");
+	let result = document.getElementById("result");
 
 	for (let i = 0; i < question.length; i++) {
 		question.item(i).style.display = "block";
 	}
 
-	console.log(parseInt(localStorage.getItem("trueQNum")) + " Answered true out of " + question.length);
-}
+	for (let i = 0; i < nextQuestionBtn.length; i++) {
+		nextQuestionBtn.item(i).style.display = "none";
+	}
 
+	for (let i = 0; i < questionTrue.length; i++) {
+		questionTrue.item(i).style.backgroundColor = "green";
+	}
+
+	for (let i = 0; i < questionFalse.length; i++) {
+		questionFalse.item(i).style.backgroundColor = "red";
+	}
+
+	result.innerHTML = "Απάντησες "+parseInt(localStorage.getItem("trueQNum")) + " από τις " + question.length + " Σωστές";
+}

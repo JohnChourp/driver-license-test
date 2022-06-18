@@ -15,65 +15,82 @@
 		<p>1. Το δικτυωτό σκαρίφημα στο μοχλό αλλαγής των ταχυτήτων είναι όμοιο σε όλα τα οχήματα:
 		</p>
 		<div>
-			<label>
-				<input type="radio" name="radio" value="false">
-				ΝΑΙ
-			</label>
+			<div class="questionFalse">
+				<label>
+					<input type="radio" name="radio1" value="false">
+					ΝΑΙ
+				</label>
+			</div>
 			<br>
-			<label>
-				<input type="radio" name="radio" value="true">
-				ΟΧΙ
-			</label>
+			<div class="questionTrue">
+				<label>
+					<input type="radio" name="radio1" value="true">
+					ΟΧΙ
+				</label>
+			</div>
 		</div>
 		<br><br>
-		<button onclick="hideQuestion1(0);">Επόμενη Ερώτηση</button>
+		<button class="nextQuestionBtn" onclick="hideQuestion1(0);">Επόμενη Ερώτηση</button>
 	</div>
 
-	<div  class="question" style="display: none;">
+	<div class="question" style="display: none;">
 		<img alt="" src="\Photos\TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis\kef1-02.png">
 
 		<p>Μεταξύ των οργάνων της αναρτήσεως, οι αποσβεστήρες (αμορτισέρ):
 		</p>
 
 		<div>
-			<label>
-				<input type="radio" name="radio" value="false">
-				Εξασφαλίζουν μόνο άνεση των επιβατών.
-			</label>
+			<div class="questionFalse">
+				<label>
+					<input type="radio" name="radio2" value="false">
+					Εξασφαλίζουν μόνο άνεση των επιβατών.
+				</label>
+			</div>
 			<br>
-			<label>
-				<input type="radio" name="radio" value="true">
-				Εγγυώνται κυρίως τη σωστή επαφή των τροχών με το οδόστρωμα.
-			</label>
+			<div class="questionTrue">
+				<label>
+					<input type="radio" name="radio2" value="true">
+					Εγγυώνται κυρίως τη σωστή επαφή των τροχών με το οδόστρωμα.
+				</label>
+			</div>
 		</div>
 		<br><br>
-		<button onclick="hideQuestion2(1);">Επόμενη Ερώτηση</button>
+		<button class="nextQuestionBtn" onclick="hideQuestion2(1);">Επόμενη Ερώτηση</button>
 	</div>
 
-	<div  class="question" style="display: none;">
+	<div class="question" style="display: none;">
 		<img alt="" src="\Photos\TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis\kef1-03.png">
 
 		<p>Ο συμπλέκτης ανοιστοιχεί στον ποδομοχλό (πεντάλ):
 		</p>
 
 		<div>
-			<label>
-				<input type="radio" name="radio" value="true">
-				1 (αριστερά).
-			</label>
+			<div class="questionTrue">
+				<label>
+					<input type="radio" name="radio3" value="true">
+					1 (αριστερά).
+				</label>
+			</div>
 			<br>
-			<label>
-				<input type="radio" name="radio" value="false">
-				2 (στο μέσο).
-			</label>
+			<div class="questionFalse">
+				<label>
+					<input type="radio" name="radio3" value="false">
+					2 (στο μέσο).
+				</label>
+			</div>
 			<br>
-			<label>
-				<input type="radio" name="radio" value="false">
-				3 (δεξιά).
-			</label>
+			<div class="questionFalse">
+				<label>
+					<input type="radio" name="radio3" value="false">
+					3 (δεξιά).
+				</label>
+			</div>
 		</div>
 		<br><br>
-		<button onclick="hideQuestion3(2); checkAnswerQuestion();">Αποτελέσματα</button>
+		<button class="nextQuestionBtn" onclick="hideQuestion3(2); checkAnswerQuestion();">Αποτελέσματα</button>
 	</div>
+
+	<div id="result"></div>
 </body>
+
 </html>
