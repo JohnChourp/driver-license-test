@@ -75,5 +75,5 @@ function checkAnswerQuestion() {
 		questionFalse.item(i).style.backgroundColor = "red";
 	}
 
-	result.innerHTML = "Απάντησες "+parseInt(localStorage.getItem("trueQNum")) + " από τις " + question.length + " Σωστές";
+	result.innerHTML = "Απάντησες " + parseInt(localStorage.getItem("trueQNum")) + " από τις " + question.length + " Σωστές";
 }

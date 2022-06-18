@@ -1,0 +1,56 @@
+.imgPhotoQuestion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+ 
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nextQuestionBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.nextQuestionBtn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
