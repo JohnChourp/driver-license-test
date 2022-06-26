@@ -1,6 +1,5 @@
 function hideQuestion1(n) {
 	let question = document.getElementsByClassName("question");
-
 	let answerNum = 0;
 	let QTrurNum = 0;
 	localStorage.setItem("trueQNum", QTrurNum);
@@ -18,7 +17,6 @@ function hideQuestion1(n) {
 
 function hideQuestion2(n) {
 	let question = document.getElementsByClassName("question");
-
 	let answerNum = 0;
 	let QTrurNum = localStorage.getItem("trueQNum");
 
@@ -30,13 +28,11 @@ function hideQuestion2(n) {
 
 	question.item(n).style.display = "none";
 	question.item(n + 1).style.display = "block";
-
 	localStorage.setItem("trueQNum", QTrurNum);
 }
 
 function hideQuestion3(n) {
 	let question = document.getElementsByClassName("question");
-
 	let answerNum = 0;
 	let QTrurNum = localStorage.getItem("trueQNum");
 
@@ -48,7 +44,22 @@ function hideQuestion3(n) {
 	}
 
 	question.item(n).style.display = "none";
+	question.item(n + 1).style.display = "block";
+	localStorage.setItem("trueQNum", QTrurNum);
+}
 
+function hideQuestion4(n) {
+	let question = document.getElementsByClassName("question");
+	let answerNum = 0;
+	let QTrurNum = localStorage.getItem("trueQNum");
+
+	if (((document.getElementsByTagName("input").item(answerNum + 7).value == "true") ||
+		(document.getElementsByTagName("input").item(answerNum + 7 + 1).value == "true")) &&
+		(document.getElementsByTagName("input").item(answerNum + 7).checked == true)) {
+		QTrurNum = parseInt(localStorage.getItem("trueQNum")) + 1;
+	}
+
+	question.item(n).style.display = "none";
 	localStorage.setItem("trueQNum", QTrurNum);
 }
 

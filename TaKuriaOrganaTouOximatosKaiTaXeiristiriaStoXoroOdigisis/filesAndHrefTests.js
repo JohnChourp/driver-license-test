@@ -60,5 +60,6 @@ function filesHrefTests() {
 	imgPhotoQuestion.item(0).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-01.png";
 	imgPhotoQuestion.item(1).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-02.png";
 	imgPhotoQuestion.item(2).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-03.png";
+	imgPhotoQuestion.item(3).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-04.png";
 }
 

@@ -9,8 +9,7 @@
 
 <body onload="filesHrefTests();">
 	<div class="question">
-		<img class="imgPhotoQuestion" alt=""
-			src="/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-01.png">
+		<img class="imgPhotoQuestion" alt="">
 
 		<p>1. Το δικτυωτό σκαρίφημα στο μοχλό αλλαγής των ταχυτήτων είναι όμοιο σε όλα τα οχήματα:
 		</p>
@@ -36,10 +35,9 @@
 	</div>
 
 	<div class="question" style="display: none;">
-		<img class="imgPhotoQuestion" alt=""
-			src="/driver-license-test/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-02.png">
+		<img class="imgPhotoQuestion" alt="">
 
-		<p>Μεταξύ των οργάνων της αναρτήσεως, οι αποσβεστήρες (αμορτισέρ):
+		<p>2. Μεταξύ των οργάνων της αναρτήσεως, οι αποσβεστήρες (αμορτισέρ):
 		</p>
 
 		<div>
@@ -64,10 +62,9 @@
 	</div>
 
 	<div class="question" style="display: none;">
-		<img class="imgPhotoQuestion" alt=""
-			src="/driver-license-test/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-03.png">
+		<img class="imgPhotoQuestion" alt="">
 
-		<p>Ο συμπλέκτης ανοιστοιχεί στον ποδομοχλό (πεντάλ):
+		<p>3. Ο συμπλέκτης ανοιστοιχεί στον ποδομοχλό (πεντάλ):
 		</p>
 
 		<div>
@@ -96,8 +93,35 @@
 			</div>
 		</div>
 		<br>
+		<button class="button nextQuestionBtn" onclick="hideQuestion3(2);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>4. Ο κινητήρας θέτει σε κίνηση τους τροχούς όταν ο συμπλέκτης είναι σε θέση:
+		</p>
+
+		<div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio4" value="true">
+					<span class="checkmark"></span>
+					Συμπλέξεως.
+				</label>
+			</div>
+			<br>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" name="radio4" value="false">
+					<span class="checkmark"></span>
+					Αποσυμπλέξεως.
+				</label>
+			</div>
+		</div>
+		<br>
 		<button class="button nextQuestionBtn"
-			onclick="hideQuestion3(2); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
+			onclick="hideQuestion4(3); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
 	</div>
 
 	<div id="result"></div>
