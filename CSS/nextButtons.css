@@ -53,3 +53,9 @@
     background-color: #4CAF50;
     color: white;
 }
+
+.divNextBtnQuestion {
+    position:absolute;
+    left:0px;
+    bottom:30%;
+}
