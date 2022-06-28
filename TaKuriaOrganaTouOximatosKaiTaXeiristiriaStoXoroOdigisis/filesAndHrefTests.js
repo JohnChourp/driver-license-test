@@ -50,15 +50,15 @@ function filesHrefTests() {
 
 	if (hostName === "johnchourp.github.io") {
 		httpLink = "https://";
-		hostName = window.location.host + "driver-license-test";
+		hostName = window.location.host + "/driver-license-test";
 
 	} else {
 		hostName = window.location.host;
 		httpLink = "http://";
 	}
 	let imgPhotoQuestion = document.getElementsByClassName("imgPhotoQuestion");
-	imgPhotoQuestion.item(0).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-01.png";
-	imgPhotoQuestion.item(1).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-02.png";
-	imgPhotoQuestion.item(2).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-03.png";
+	for (let i = 0; i < imgPhotoQuestion.length; i++) {
+		imgPhotoQuestion.item(i).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-" + (i + 1) + ".png";
+	}
 }
 

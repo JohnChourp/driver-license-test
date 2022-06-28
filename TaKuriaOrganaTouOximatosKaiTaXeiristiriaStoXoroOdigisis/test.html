@@ -7,100 +7,320 @@
 	<title>Test1</title>
 </head>
 
-<body onload="filesHrefTests();">
+<body onload="initInputElements(); filesHrefTests();">
 	<div class="question">
-		<img class="imgPhotoQuestion" alt=""
-			src="/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-01.png">
+		<img class="imgPhotoQuestion" alt="">
 
 		<p>1. Το δικτυωτό σκαρίφημα στο μοχλό αλλαγής των ταχυτήτων είναι όμοιο σε όλα τα οχήματα:
 		</p>
-		<div>
+		<div class="questionNum">
 			<div class="questionFalse">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio1" value="false">
+					<input class="radioCheckBox" type="radio" value="false">
 					<span class="checkmark"></span>
 					ΝΑΙ
 				</label>
 			</div>
-			<br>
 			<div class="questionTrue">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio1" value="true">
+					<input class="radioCheckBox" type="radio" value="true">
 					<span class="checkmark"></span>
 					ΟΧΙ
 				</label>
 			</div>
 		</div>
 		<br>
-		<button class="button nextQuestionBtn" onclick="hideQuestion1(0);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+	<div class="divNextBtnQuestion">
+		<button class="button nextQuestionBtn" onclick="hideQuestionFirst(0);"><span>Επόμενη Ερώτηση</span></button>
 	</div>
 
 	<div class="question" style="display: none;">
-		<img class="imgPhotoQuestion" alt=""
-			src="/driver-license-test/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-02.png">
+		<img class="imgPhotoQuestion" alt="">
 
-		<p>Μεταξύ των οργάνων της αναρτήσεως, οι αποσβεστήρες (αμορτισέρ):
+		<p>2. Μεταξύ των οργάνων της αναρτήσεως, οι αποσβεστήρες (αμορτισέρ):
 		</p>
 
-		<div>
+		<div class="questionNum">
 			<div class="questionFalse">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio2" value="false">
+					<input class="radioCheckBox" type="radio" value="false">
 					<span class="checkmark"></span>
 					Εξασφαλίζουν μόνο άνεση των επιβατών.
 				</label>
 			</div>
-			<br>
 			<div class="questionTrue">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio2" value="true">
+					<input class="radioCheckBox" type="radio" value="true">
 					<span class="checkmark"></span>
 					Εγγυώνται κυρίως τη σωστή επαφή των τροχών με το οδόστρωμα.
 				</label>
 			</div>
 		</div>
 		<br>
-		<button class="button nextQuestionBtn" onclick="hideQuestion2(1);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(1);"><span>Επόμενη Ερώτηση</span></button>
 	</div>
 
 	<div class="question" style="display: none;">
-		<img class="imgPhotoQuestion" alt=""
-			src="/driver-license-test/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-03.png">
+		<img class="imgPhotoQuestion" alt="">
 
-		<p>Ο συμπλέκτης ανοιστοιχεί στον ποδομοχλό (πεντάλ):
+		<p>3. Ο συμπλέκτης ανοιστοιχεί στον ποδομοχλό (πεντάλ):
 		</p>
 
-		<div>
+		<div class="questionNum">
 			<div class="questionTrue">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio3" value="true">
+					<input class="radioCheckBox" type="radio" value="true">
 					<span class="checkmark"></span>
 					1 (αριστερά).
 				</label>
 			</div>
-			<br>
 			<div class="questionFalse">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio3" value="false">
+					<input class="radioCheckBox" type="radio" value="false">
 					<span class="checkmark"></span>
 					2 (στο μέσο).
 				</label>
 			</div>
-			<br>
 			<div class="questionFalse">
 				<label class="container">
-					<input class="radioCheckBox" type="radio" name="radio3" value="false">
+					<input class="radioCheckBox" type="radio" value="false">
 					<span class="checkmark"></span>
 					3 (δεξιά).
 				</label>
 			</div>
 		</div>
 		<br>
-		<button class="button nextQuestionBtn"
-			onclick="hideQuestion3(2); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(2);"><span>Επόμενη Ερώτηση</span></button>
 	</div>
 
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>4. Ο κινητήρας θέτει σε κίνηση τους τροχούς όταν ο συμπλέκτης είναι σε θέση:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Συμπλέξεως.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Αποσυμπλέξεως.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(3);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>5. Το κιβώτιο ταχυτήτων συνδέει τη μηχανή και τους τροχούς:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					ΝΑΙ
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					ΟΧΙ
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(4);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>6. Η μετακίνηση του μοχλού του δείκτη αλλαγής κατεύθυνσης (φλας) σε σχέση με την κατεύθυνση που στρίβει το
+			τιμόνι:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Είναι αντίθετη.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Είναι η ίδια με αυτήν του τιμονιού.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Ποικίλει ανάλογα με τα οχήματα.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(5);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>7. Με κινητήρα σε λειτουργία, οι κόκκινοι φωτεινοί δείκτες στο πίνακα οργάνων (ταμπλό) τονίζουν μια σοβαρή
+			δυσλειτουργία:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					ΝΑΙ
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					ΟΧΙ
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(6);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>8. Με κινητήρα σε λειτουργία, οι κόκκινοι φωτεινοί δείκτες στο πίνακα οργάνων τονίζουν την ανάγκη να
+			σταματήσετε γρήγορα:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					ΝΑΙ
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					ΟΧΙ
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(7);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>9. Το φωτεινό σήμα για τα φώτα πορείας (μεγάλα) είναι το:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					(α)(πράσινο).
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					(β)(μπλε).
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					(γ)(πράσινο).
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					(δ)(κίτρινο).
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(8);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="">
+
+		<p>10. Αναμμένοι κίτρινοι φωτεινοί δείκτες στον πίνακα οργάνων αποτελούν ενδείξεις:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Προειδοποιήσεως για κάποια λειτουργία η ενέργεια που πρέπει να κάνετε.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Συναργεμού που απαιτεί τη στάση.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestionLast(9); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
+		</div>
+	</div>
+	<br>
 	<div id="result"></div>
+
 </body>
 
 </html>
