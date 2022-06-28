@@ -4,7 +4,7 @@ function addfilesTests() {
 
 	if (hostName === "johnchourp.github.io") {
 		httpLink = "https://";
-		hostName = window.location.host + "driver-license-test";
+		hostName = window.location.host + "/driver-license-test";
 
 	} else {
 		hostName = window.location.host;
