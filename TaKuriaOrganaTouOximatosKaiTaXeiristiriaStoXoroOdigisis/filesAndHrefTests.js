@@ -58,7 +58,7 @@ function filesHrefTests() {
 	}
 	let imgPhotoQuestion = document.getElementsByClassName("imgPhotoQuestion");
 	for (let i = 0; i < imgPhotoQuestion.length; i++) {
-		imgPhotoQuestion.item(i).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-0" + (i + 1) + ".png";
+		imgPhotoQuestion.item(i).src = httpLink + hostName + "/Photos/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/kef1-" + (i + 1) + ".png";
 	}
 }
 
