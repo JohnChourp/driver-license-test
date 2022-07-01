@@ -23,9 +23,9 @@ function initInputElements() {
 	}
 }
 
-function questionNumChildElementCount(n,questionNum) {
+function questionNumChildElementCount(n, questionNum) {
 	let sum = 0;
-	for (i = 0; i < n; i++) {
+	for (let i = 0; i < n; i++) {
 		sum = sum + questionNum.item(i).childElementCount;
 	}
 	return sum;
@@ -34,16 +34,57 @@ function questionNumChildElementCount(n,questionNum) {
 function answersList(n) {
 	let answerList = [];
 	let questionNum = document.getElementsByClassName("questionNum");
-	
-	for (i = 0; i < questionNum.length; i++) {
-		answerList[i] = questionNumChildElementCount(i,questionNum);
+
+	for (let i = 0; i < questionNum.length; i++) {
+		answerList[i] = questionNumChildElementCount(i, questionNum);
 	}
 	return answerList[n];
 }
 
+function initAnswersTrueList(){
+	let answerTrueList = [];
+	let questionNum = document.getElementsByClassName("questionNum");
+
+	for (let i = 0; i < questionNum.length; i++) {
+		if(questionNum.item(i).childElementCount === 2){
+			if (questionNum.item(i).getElementsByTagName("div").item(0).classList.contains('questionTrue')) {
+				answerTrueList[i] = 0;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(1).classList.contains('questionTrue')) {
+				answerTrueList[i] = 1;
+			}
+		}
+		if(questionNum.item(i).childElementCount === 3){
+			if (questionNum.item(i).getElementsByTagName("div").item(0).classList.contains('questionTrue')) {
+				answerTrueList[i] = 0;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(1).classList.contains('questionTrue')) {
+				answerTrueList[i] = 1;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(2).classList.contains('questionTrue')) {
+				answerTrueList[i] = 2;
+			}
+		}
+		if(questionNum.item(i).childElementCount === 4){
+			if (questionNum.item(i).getElementsByTagName("div").item(0).classList.contains('questionTrue')) {
+				answerTrueList[i] = 0;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(1).classList.contains('questionTrue')) {
+				answerTrueList[i] = 1;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(2).classList.contains('questionTrue')) {
+				answerTrueList[i] = 2;
+			}
+			if (questionNum.item(i).getElementsByTagName("div").item(3).classList.contains('questionTrue')) {
+				answerTrueList[i] = 3;
+			}
+		}
+	}
+	return answerTrueList;
+}
+
 function answersTrueList(n) {
-	//                    1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42
-	let answerTrueList = [1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 2, 0, 0, 0, 0, 1, 1, 2, 0, 2, 0, 1, 1, 2, 0, 0, 0, 1, 1, 0, 0, 1, 1, 2, 0, 0, 0, 1];
+	let answerTrueList = initAnswersTrueList();
 	return answerTrueList[n];
 }
 
