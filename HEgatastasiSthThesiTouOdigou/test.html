@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="description" content="Ελληνικό Τεστ Οδήγης: Η εγκατάσταση στη θέση του οδηγού">
+	<script src="filesAndHrefTests.js" type="text/javascript"></script>
+	
+	<title>Test 2: Η εγκατάσταση στη θέση του οδηγού</title>
+</head>
+
+<body onload="filesHrefTests(); initInputElements();">
+	<div class="question">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>1. Με τους καθρέπτες μπορείτε να βλέπετε:
+		</p>
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Γύρω από το όχημα, από τη θέση των καθρεπτών και πίσω.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Τα πάντα στις πλευρές του οχήματος.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Μόνο ένα μέρος προς την πίσω πλευρά.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion">
+		<button class="button nextQuestionBtn" onclick="hideQuestionFirst(0);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>2. Η νεκρή γωνία είναι μια περιοχή:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Μη ορατή από τη θέση του οδηγού μέσω των καθρεπτών.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Ορατή μέσω των καθρεπτών.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Μη ορατή με λοξή ματιά πάνω από τους ώμους.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(1);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>3. Για να εγκατασταθείτε σωστά στη θέση του οδηγού:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Πρέπει να μπορείτε να ακουμπάτε τους καρπούς των χεριών σας στο επάνω μέρος του τιμονιού και να μπορείτε να πατάτε ως το τέρμα το συμπλέκτη.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Πρέπει να μπορείτε να ακουμπάτε τα χέρια σας στον πίνακα ελέγχου.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(2);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>4. Ο μηχανισμός ξεθαμπώματος του πίσω τζαμιού:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Απομακρύνει τους υδρατμούς και λειώνει την πάχνη του τζαμιού.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Καταναλώνει λίγη ενέργεια.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Αντικαθιστά τους πίσω υαλοκαθαριστήρες.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(3);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>5. Ένα ογκώδες αντικείμενο δεν επιτρέπεται να εξέχει προς τα πίσω περισσότερο του 30% του μήκους του οχήματος χωρίς ειδική άδεια:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					ΝΑΙ
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					ΟΧΙ
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(4);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>6. Μια ζώνη ασφάλειας που έχει συστραφεί (στρίψει) είναι επικίνδυνη:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					ΝΑΙ
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					ΟΧΙ
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(5);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>7. Οι αποσκευές τοποθετούνται κατά προτίμηση:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Στις πίσω θέσεις (1).
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Στην οροφή (2).
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Στο πορτ μπαγκάζ (3).
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(6);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>8. Για να ρυθμίσετε τους καθρέπτες σας:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					Ρυθμίζετε το κάθισμά σας και μετά ρυθμίζετε τους καθρέπτες.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					Ρυθμίζετε πρώτα τους καθρέπτες και μετά το κάθισμά σας.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(7);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<img class="imgPhotoQuestion" alt="" referrerpolicy="no-referrer">
+
+		<p>9. Αν δεν φοράτε ζώνη ασφάλειας, κάποια σύγκρουση μπορεί να προκαλέσει σοβαρούς ή θανάσιμους τραυματισμούς από τα:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					30 km/h.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					50 km/h.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					90 km/h.
+				</label>
+			</div>
+		</div>
+		<br>
+	</div>
+	<div class="divNextBtnQuestion" style="display: none;">
+		<button class="button nextQuestionBtn" onclick="hideQuestion(8);"><span>Επόμενη Ερώτηση</span></button>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>10. Για να επιβιβασθείτε στο όχημά σας:
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					α. Γυρνάτε την πλάτη σας στην κυκλοφορία της κατευθύνσεώς σας.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					β. Βρίσκεσθε με πρόσωπο προς την κυκλοφορία της κατευθύνσεώς σας.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(9);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>11. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(10);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>12. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(11);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>13. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(12);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>14. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(13);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>15. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(14); "><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>16. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(15);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>17.
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(16);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>18. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(17);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>19. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(18);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>20. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(19);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>21. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestion(20);"><span>Επόμενη Ερώτηση</span></button>
+		</div>
+	</div>
+
+	<div class="question" style="display: none;">
+		<p>22. 
+		</p>
+
+		<div class="questionNum">
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionFalse">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="false">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+			<div class="questionTrue">
+				<label class="container">
+					<input class="radioCheckBox" type="radio" value="true">
+					<span class="checkmark"></span>
+					.
+				</label>
+			</div>
+		</div>
+		<br>
+		<div class="divNextBtnQuestion" style="display: none;">
+			<button class="button nextQuestionBtn"
+				onclick="hideQuestionLast(21); checkAnswerQuestion();"><span>Αποτελέσματα</span></button>
+		</div>
+	</div>
+
+	<br>
+	<div id="result"></div>
+
+</body>
+
+</html>

@@ -40,5 +40,7 @@ function filesHrefIndex() {
 	}
 	let tests = document.getElementsByClassName("tests");
 	tests.item(0).href = httpLink + hostName + "/TaKuriaOrganaTouOximatosKaiTaXeiristiriaStoXoroOdigisis/test.html";
+	tests.item(1).href = httpLink + hostName + "/HEgatastasiSthThesiTouOdigou/test.html";
+
 }
 
